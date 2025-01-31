@@ -28,7 +28,7 @@ function _team(
   buf.writeUInt32LE(res.team.extId, 0x000c);
   writeSjisStr(buf, 0x0010, 0x0024, leader ? leader.profile.name : "Error");
   writeSjisStr(buf, 0x0024, 0x0044, res.team.name);
-  writeSjisStr(buf, 0x0044, 0x00d8, process.env.SHOP_NAME || "");
+  writeSjisStr(buf, 0x0044, 0x00d8, process.env.SHOP_NAME || "Minime");
   buf.writeUInt32LE(res.team.nameBg, 0x00d8);
   buf.writeUInt32LE(res.team.nameFx, 0x00dc);
   buf.fill(0xff, 0x00e0, 0x00f9); // Bitset: Unlocked BGs probably
