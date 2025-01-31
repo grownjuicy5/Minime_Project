@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "editor.rulers": [
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.formatting.provider": "black"
+}
