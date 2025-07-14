@@ -89,8 +89,7 @@ export function loadConfig3(res: LoadConfigResponse3) {
   buf.writeInt16LE(0x0005, 0x0000);
   buf.writeInt8(res.status, 0x0002);
   buf.writeUInt16LE(210, 0x0016);
-  //buf.writeInt8(0x2, 0x0007); // Game Revision
-  buf.writeInt8(0x63, 0x0007); // Game Revision
+  buf.writeInt8(0x2, 0x0007); // Game Revision
   buf.writeInt8(0x41, 0x0059); // revision letter
   buf.writeInt8(0x1, 0x0014); // playstamps enable
   buf.writeInt8(0x1, 0x0015); // playstamps enable 2
