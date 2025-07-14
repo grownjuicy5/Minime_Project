@@ -68,7 +68,8 @@ export function loadConfig1(res: LoadConfigResponse1) {
   buf.writeInt16LE(0x0005, 0x0000);
   buf.writeInt8(res.status, 0x0002);
   buf.writeUInt16LE(res.serverVersion, 0x0016);
-  buf.writeInt8(0x7, 0x0007); // Game Revision
+  buf.writeInt8(0x8, 0x0007); // Game Revision
+  buf.writeInt8(0x4B, 0x0059); // revision letter
 
   return buf;
 }
